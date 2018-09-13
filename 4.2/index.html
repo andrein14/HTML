@@ -31,7 +31,7 @@
   <center>
     <form action="http://foo.com" method="post">
         <div>
-          <label for="say">Name: </label>
+          <label for="name">Name: </label>
           <input name="say" id="say" value="">
         </div>
         <div>
@@ -39,33 +39,51 @@
           <input name="to" id="to" value="">
         </div>
         <div>
-            <label for="to">Password:</label>
+            <label for="pass">Password:</label>
             <input type="password" id="pwd" name="pwd">
         </div>
         <div>
-                <label for="to">Color:</label>
+                <label for="clr">Color:</label>
                 <input type="color" id="clr" name="clr">
             </div>
             <div>
-                    <label for="to">Date:</label>
+                    <label for="dat">Date:</label>
                     <input type="date" id="dat" name="dat">
-                </div>
+            </div>
         <div>
-        <label for="say">Message:</label>
+        <label for="msg">Message:</label>
         <textarea></textarea>
-    </div>
-        <div>
-          <button type="submit">Send my message</button>
         </div>
         <div>
-                <label for="to">Country:</label>
+                <label for="country">Country:</label>
                 <select id="simple" name="simple">
-                        <option>Romania</option>
+                        <option value="c2">-</option>
+                        <option value="c1">Romania</option>
                         <option>Germany</option>
                         <option>U.K.</option>
                         <option>U.S.</option>
                         <option>Spain</option>
                       </select>
+        </div>
+        <div>
+                <label for="country">City/Country:</label>
+                <select id="groups" name="groups">
+                        <option>-</option>
+                        <optgroup label="Romania">
+                          <option>Bucharest</option>
+                          <option>Sibiu</option>
+                          <option>Mures</option>
+                          <option>Brasov</option>
+                        </optgroup>
+                        <optgroup label="Germany">
+                          <option>Nurnberg</option>
+                          <option>Berlin</option>
+                          <option>Munchen</option>
+                        </optgroup>
+                      </select>
+        </div>
+        <div>
+            <button type="submit">Send my message</button>
         </div>
       </form>
     </center>
